@@ -6,7 +6,7 @@
 
 ![](./res/search1.png)
 
-![](./res/search2.png)
+![](./res/search_.png)
 
 ## Install
 
