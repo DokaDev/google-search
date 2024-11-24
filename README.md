@@ -12,8 +12,8 @@
 
 All instructions can be found at [draculatheme.com/google](https://draculatheme.com/google).
 
-- If you don’t have the Stylus extension installed in your browser, visit the following link to install it: https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
-- Click “Install” at https://userstyles.world/style/19469/google-dracula to apply the theme to your browser.
+- If you don’t have the Stylus extension installed in your browser, visit the following link to install it: [Link](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+- Click “Install” at [Link](https://userstyles.world/style/19469/google-dracula) to apply the theme to your browser.
 
 enjoy! 😆
 
