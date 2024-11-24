@@ -1,149 +1,159 @@
 /* ==UserStyle==
 @name         Google-Dracula
-@version      20241124.20.13
+@version      20241124.21.51
 @namespace    https://userstyles.world/user/DokaDev
 @description  This is a theme that applies the Dracula color scheme to the Google main and search pages.
 @author       DokaDev
 @license      MIT
 ==/UserStyle== */
 
-@-moz-document regexp("https?://www\\.google\\.com/search\\?.*") {
+@-moz-document regexp("https?://www\\.google\\.com/search\\?.*")
+{
     /* global */
     span {
         color: #b0b4ca;
     }
-    
+
     /* ------------------------------------------------------- */
     /* link */
-    span.cHaqb,.DKV0Md {
+    span.cHaqb,
+    .DKV0Md {
         color: #8fbdfc;
     }
-    
+
     /* ------------------------------------------------------- */
     /* GNB */
     [selected].YmvwI {
-        color: #50FA7B;
+        color: #50fa7b;
         font-weight: bold;
-        border-bottom: 3px solid #50FA7B;
+        border-bottom: 3px solid #50fa7b;
     }
     .sBbkle {
-        border-bottom: 1px solid #6272A4;
+        border-bottom: 1px solid #6272a4;
     }
-    
+
     /* more button*/
     .YmvwI {
         color: #b0b4ca;
         transition: color 0.3s ease;
     }
     .YmvwI:hover {
-        color: #6272A4;
+        color: #6272a4;
     }
     .Lu57id span {
-    /*     color: #b0b4ca; */
-    /*     transition: color 0.3s ease; */
+        /*     color: #b0b4ca; */
+        /*     transition: color 0.3s ease; */
     }
-    
-    .LatpMc.d4DFfb.nPDzT.T3FoJb, .K1yPdf {
+
+    .LatpMc.d4DFfb.nPDzT.T3FoJb,
+    .K1yPdf {
         transition: background 0.3s ease;
     }
-    .LatpMc.d4DFfb.nPDzT.T3FoJb:hover, .K1yPdf:hover {
-        background: #6272A4;
-    /*     transition: background 0.3s ease; */
+    .LatpMc.d4DFfb.nPDzT.T3FoJb:hover,
+    .K1yPdf:hover {
+        background: #6272a4;
+        /*     transition: background 0.3s ease; */
     }
-    
+
     div.fKmH1e {
-        background: #282A36;
+        background: #282a36;
     }
-    
+
     /* right icons */
     .gb_E {
         fill: #ffffff;
     }
     .gb_Xa {
         border: 1px solid rgba(0, 0, 0, 0);
-        transition: border 0.5s ease; 
+        transition: border 0.5s ease;
     }
     .gb_Xa:hover {
-    /*     border: 1px solid #FF79C6; */
+        /*     border: 1px solid #FF79C6; */
     }
-    
+
     /* ------------------------------------------------------- */
     /* backgrounds */
     body {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     #main {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
+
     .sfbg {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div#appbar.appbar {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     .Lu57id {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
+
     #slim_appbar.WE0UJf {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
+
     #fsl {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.srKDX {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.NEw0P.WfvaCf {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.SHW0Qe {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.pKv8Zb.fm06If {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     /* arrow button */
-    span.DYjfCf, div.p8Jhnd, .s3IB3, .niO4u {
-        background: #44475A !important;
+    span.DYjfCf,
+    div.p8Jhnd,
+    .s3IB3,
+    .niO4u {
+        background: #44475a !important;
     }
-    
+
     /* about */
     div.Kcn6oc.adDDi {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.U48fD {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.Ww4FFb {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    .DfMusf { /* card */
+    .DfMusf {
+        /* card */
         border-radius: 16px !important;
-        background: #44475A !important;
+        background: #44475a !important;
     }
     .V3FYCf {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     .KTBKoe {
-    /*     background: #44475A;
+        /*     background: #44475A;
         height: 37px;
         border-bottom: 1px solid #6272A4; */
         color: #b0b4ca !important;
     }
     .RDmXvc {
-        background-image: linear-gradient(transparent 0px, #282A36 55px)
+        background-image: linear-gradient(transparent 0px, #282a36 55px);
     }
     .in7vHe {
-        background: #44475A;
+        background: #44475a;
     }
     .zNsLfb.Jzkafd {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
-    div.CybWFf, .DWsAYc { /* more button */
+
+    div.CybWFf,
+    .DWsAYc {
+        /* more button */
         background: rgba(68, 71, 90, 0.8);
         box-shadow: 1px 1px 8px 2px #171717;
     }
@@ -151,54 +161,54 @@
         background: RGB(68, 71, 90);
     }
     .GLcBOb .pZvJc {
-        background-color: #282A36;
+        background-color: #282a36;
     }
     /* .Ap1Qsc {
         background: #282A36 !important;
     } */
-    
+
     /* div.ZDHp {
         background: #44475A !important;
     } */
     li.AB2Fdd.o6OF0.DJbVFb {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
     div.ZFiwCf {
-        background: #44475A !important;
+        background: #44475a !important;
     }
     .xDKLO div.Ww4FFb.vt6azd {
-        background: #44475A !important;
+        background: #44475a !important;
     }
-    
+
     .I6TXqe {
-        background: #44475A !important;
+        background: #44475a !important;
     }
-    
+
     /* div.Ww4FFb.vt6azd {
         background: #44475A !important;
     } */
-    
+
     a.ZpEhbb.BWikKb {
-        background: #FF79C6;
+        background: #ff79c6;
         border: none;
-        color: #F8F8F2 !important;
+        color: #f8f8f2 !important;
     }
-    .xDKLO div.S8ee5.CwbYXd.wHYlTd { /* more experiences */
-        background: #6272A4 !important;
+    .xDKLO div.S8ee5.CwbYXd.wHYlTd {
+        /* more experiences */
+        background: #6272a4 !important;
     }
-    
+
     .ab_button {
-        background: #6272A4 !important;
-        color: #F8F8F2 !important;
+        background: #6272a4 !important;
+        color: #f8f8f2 !important;
         border-radius: 5px;
-        
+
         transition: background-color 0.3s ease;
     }
     .ab_button span {
-        color: #F8F8F2 !important;
+        color: #f8f8f2 !important;
     }
-    
-    
+
     /* fin market summary */
     /* overview / compare button */
     .Maj6Tc {
@@ -209,149 +219,173 @@
         transition: background 0.3s ease;
     }
     span.REySof.T9jMmf:hover {
-        background: #6272A4;
+        background: #6272a4;
     }
-    
-    div.knowledge-finance-wholepage-chart__hover-card { /* floating box */
-        background: #44475A;
+
+    div.knowledge-finance-wholepage-chart__hover-card {
+        /* floating box */
+        background: #44475a;
         box-shadow: 1px 1px 8px 2px #171717;
     }
-    
-    span.wh9d9d { /* text h */
-        background: #282A36 !important;
+
+    span.wh9d9d {
+        /* text h */
+        background: #282a36 !important;
     }
-    
+
     div.yvg0ob span {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
-    .uch-xa-tl { /* text v */
-        background: #282A36 !important;
+
+    .uch-xa-tl {
+        /* text v */
+        background: #282a36 !important;
     }
-    
-    span.fw-price-dn { /* price change chard background */
-        background: #BD93F9 !important;
+
+    span.fw-price-dn {
+        /* price change chard background */
+        background: #bd93f9 !important;
     }
-    .z1asCe svg { /* icon */
+    .z1asCe svg {
+        /* icon */
         fill: #ffffff;
     }
     .jBBUv span {
         color: #ffffff;
     }
-    
+
     .S7JRS {
-        background: #282A36;
-        transition: background 0.3s ease
+        background: #282a36;
+        transition: background 0.3s ease;
     }
     .S7JRS:hover {
-        background: #6272A4;
+        background: #6272a4;
     }
-    
+
     /* compare search */
     .EEmK6c {
-        background-color: #44475A;
+        background-color: #44475a;
     }
     input.KIdUu {
-        background: #44475A;
-        color: #F8F8F2;
+        background: #44475a;
+        color: #f8f8f2;
     }
     input.KIdUu::placeholder {
         color: #b0b4ca;
     }
-    
+
     /* image search page */
     div.wIjY0d.jFk0f {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    .H8Rx8c { /* items */
-        background: #44475A !important;
+    .H8Rx8c {
+        /* items */
+        background: #44475a !important;
     }
-    div.GKS7s { /* suggestions */
-        background: #44475A !important;
+    div.GKS7s {
+        /* suggestions */
+        background: #44475a !important;
     }
-    .vezEod { /* gradient */
-        background: linear-gradient(to right, transparent 0%, #282A36 60%, #282A36) !important;
+    .vezEod {
+        /* gradient */
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            #282a36 60%,
+            #282a36
+        ) !important;
     }
     sBbkle {
-        background: linear-gradient(to left, transparent 0%, #282A36 60%, #282A36) !important;
+        background: linear-gradient(
+            to left,
+            transparent 0%,
+            #282a36 60%,
+            #282a36
+        ) !important;
     }
-    
+
     .zp6Lyf.FpfXM {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
-    
-    .x5f7Bc { /* buttons */
+
+    .x5f7Bc {
+        /* buttons */
         fill: #ffffff;
     }
-    
-    
+
     /* image-related searches */
     .BA0zte {
-        background: #44475A;
+        background: #44475a;
     }
-    
+
     div.ntcwRe {
-        background: #44475A;
+        background: #44475a;
     }
     .yLRPV > svg {
         fill: #ffffff;
     }
-    
-    
+
     /* shopping page */
     div.i0X6df {
-        background: #44475A;
+        background: #44475a;
     }
     div.sh-dr__g {
-        background: #44475A;
+        background: #44475a;
     }
-    div.sh-dr__g.zehhyb { /* exception */
-        background: #282A36;
+    div.sh-dr__g.zehhyb {
+        /* exception */
+        background: #282a36;
     }
     /* .baeIxf::placeholder {
         background: #44475A !important;
     } */
-    span.yLkPM span { /* min low */
-        background: #44475A;
+    span.yLkPM span {
+        /* min low */
+        background: #44475a;
     }
-    
-    div.vkYnff { /* sort by : --- */
+
+    div.vkYnff {
+        /* sort by : --- */
         color: #b0b4ca !important;
     }
-    
-    
+
     /* videos page */
     div.ITZIwc.p4wth {
         color: #b0b4ca !important;
     }
-    
+
     /* ------------------------------------------------------- */
     /* Age Block */
-    .NEw0P { /* corner back */
-        background: #282A36;
+    .NEw0P {
+        /* corner back */
+        background: #282a36;
     }
-    
-    .Qc895c { /* block 1 */
-        background: #44475A !important;
+
+    .Qc895c {
+        /* block 1 */
+        background: #44475a !important;
     }
     .hjFrpb.PZPZlf {
-        background: #44475A !important;
+        background: #44475a !important;
     }
-    
-    
+
     /* search result */
-    .N54PNb, .HG5ZQb {
-        background: #282A36;
+    .N54PNb,
+    .HG5ZQb {
+        background: #282a36;
     }
     /* side card */
     div.KcXNxb {
-        background: #282A36;
+        background: #282a36;
     }
     div.W0urI {
-        background: #44475A;
+        background: #44475a;
     }
-    
+
+    .zf84ud.THG0oc.wdQNof,
+    .ZYHQ7e.kLhEKe.vRDmnf.wHYlTd {
+        background: #44475a;
+    }
     /* ------------------------------------------------------- */
     /* text */
     cite.qLRx3b.tjvcx.GvPZzd.cHaqb {
@@ -364,11 +398,11 @@
         color: #b0b4ca !important;
     }
     a {
-        color:#8da8fb !important;
+        color: #8da8fb !important;
     }
     .hgKElc b {
-        color: #8BE9FD !important;
-    /*     background-color: #44475A !important; */
+        color: #8be9fd !important;
+        /*     background-color: #44475A !important; */
     }
     .zz3gNc {
         color: #b0b4ca !important;
@@ -376,9 +410,9 @@
     div.VwiC3b.yXK7lf.p4wth.r025kc.hJNv6b.Hdw6tb {
         color: #b0b4ca !important;
     }
-    
+
     a:visited {
-        color:#697ec0 !important;
+        color: #697ec0 !important;
     }
     span.yi40Hd.YrbPuc {
         color: #46af43 !important;
@@ -393,68 +427,66 @@
     span.LrzXr.kno-fv.wHYlTd.z8gr9e {
         color: #b0b4ca !important;
     }
-    
+
     /* ------------------------------------------------------- */
     /* images - View more images button  */
     .ZFiwCf {
-        background: #44475A;
+        background: #44475a;
     }
-    
+
     /* ------------------------------------------------------- */
     /* videos - View more */
     div.S8ee5.CwbYXd.wHYlTd {
-        background: #44475A;
+        background: #44475a;
     }
-    
+
     /* ------------------------------------------------------- */
     /*
         suggestions
     */
     .vIifob {
-        background: #44475A;
+        background: #44475a;
     }
-    
+
     /* ------------------------------------------------------- */
     /* Page Navigator */
     /* activated */
     td.YyVfkd.NKTSme {
         color: #f5509c;
         font-weight: bold;
-        
     }
     /* td.NKTSme a {
         color: #b0b4ca;
     }
      */
-    
+
     /* ------------------------------------------------------- */
     /* footer */
-    #fbar.f6F9Be.TrMVnc, .f6F9Be {
-    /*     background: #18191e; */
-        background: #282A36;
-    /*     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
-        border-top: 1px solid #6272A4;
+    #fbar.f6F9Be.TrMVnc,
+    .f6F9Be {
+        /*     background: #18191e; */
+        background: #282a36;
+        /*     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+        border-top: 1px solid #6272a4;
     }
     /* help sendfeedback privacy terms */
     /* .wHYlTd { */
     a#dk2qOd.Fx4vi.wHYlTd {
-        background: #282A36;
+        background: #282a36;
     }
     a.Fx4vi.wHYlTd.ZYHQ7e {
-        background: #282A36;
+        background: #282a36;
     }
     div.VtPCGb {
         color: #f5509c;
         font-weight: bold;
     }
-    
-    span.Q8LRLc { /* country */
-        color: #BD93F9 !important;
+
+    span.Q8LRLc {
+        /* country */
+        color: #bd93f9 !important;
     }
-    
-    
-    
-    
+
     /* ------------------------------------------------------- */
     /* .PJI6ge {
         
@@ -464,188 +496,195 @@
         transition: color 0.5s ease; /* 색상 전환 애니메이션 */
     }
     span.mgAbYb.OSrXXb.RES9jf.IFnjPb:hover {
-        color: #BD93F9;
+        color: #bd93f9;
     }
-    
+
     /* ------------------------------------------------------- */
     /* search box */
     .RNNXgb {
-        background-color: #44475A !important;
-        border: 2px solid #6272A4 !important;
-        
+        background-color: #44475a !important;
+        border: 2px solid #6272a4 !important;
+
         transition: width 0.3s ease;
     }
-    
+
     div.erkvQe {
-    /*     background-color: #44475A !important; */
+        /*     background-color: #44475A !important; */
         background-color: rgba(68, 71, 90, 0.4) !important;
-        
-    /*     border: 2px solid #6272A4 !important; */
+
+        /*     border: 2px solid #6272A4 !important; */
     }
     div.aajZCb {
-    /*     background-color: #44475A !important; */
-        
+        /*     background-color: #44475A !important; */
+
         background-color: rgba(68, 71, 90, 0.88) !important;
-    /*     border-right: 2px solid #6272A4 !important; */
+        /*     border-right: 2px solid #6272A4 !important; */
     }
-    
+
     li.sbhl {
-        background: #6272A4;
-    /*     transition: background 0.2s ease-in-out; */
+        background: #6272a4;
+        /*     transition: background 0.2s ease-in-out; */
     }
     li.sbct.PZPZlf.yMAEcf {
-        background: #282A36;
-        border: 1px solid #FF79C6;
-    } 
-    
-    
+        background: #282a36;
+        border: 1px solid #ff79c6;
+    }
+
     /* ------------------------------------------------------- */
     /* split */
     /* h */
-    .iRPzcb { /* left side */
-        border-bottom: 1px solid #44475A;
+    .iRPzcb {
+        /* left side */
+        border-bottom: 1px solid #44475a;
     }
-    #rhs .u7yw9 .cLjAic { /* right side */
-        border-bottom: 1px solid #44475A;
+    #rhs .u7yw9 .cLjAic {
+        /* right side */
+        border-bottom: 1px solid #44475a;
     }
-    
-    hr.Bi9oQd { /* show more images bar */
-        background: #44475A;
+
+    hr.Bi9oQd {
+        /* show more images bar */
+        background: #44475a;
     }
-    .akqY6 { /* feedback */
-        background: #44475A;
+    .akqY6 {
+        /* feedback */
+        background: #44475a;
     }
     /* v */
     #rhs .u7yw9 {
-        border-left: 1px solid #44475A;
+        border-left: 1px solid #44475a;
     }
     .sHEJob {
-        border-top: 1px solid #44475A;
+        border-top: 1px solid #44475a;
     }
     .JJZKK.Wui1sd {
-        border-right: 1px solid #44475A;
+        border-right: 1px solid #44475a;
     }
     .WxVj2b {
-        background: #44475A;
+        background: #44475a;
     }
-    .KLEmSd, .XPA7rb {
-        border-bottom: 1px solid #44475A;
+    .KLEmSd,
+    .XPA7rb {
+        border-bottom: 1px solid #44475a;
     }
     .rhHIGd {
-        background-color: #44475A;
+        background-color: #44475a;
     }
     .Hwkikb.WY0eLb {
-        border-left: 1px solid #44475A;
+        border-left: 1px solid #44475a;
     }
     .GCSyeb {
-        background: #44475A;
+        background: #44475a;
     }
     .webanswers-webanswers_table__webanswers-table tr {
-        border-bottom: 1px solid #44475A;
+        border-bottom: 1px solid #44475a;
     }
     .Esev1b {
-        border-bottom: 1px solid #6272A4;
+        border-bottom: 1px solid #6272a4;
     }
-    
-    #swml { /* footer #1 */
-        border-left: 1px solid #44475A;
-    } 
-    .b2hzT { /* footer #2 */
-        border-bottom: 1px solid #44475A;
+
+    #swml {
+        /* footer #1 */
+        border-left: 1px solid #44475a;
     }
-    
+    .b2hzT {
+        /* footer #2 */
+        border-bottom: 1px solid #44475a;
+    }
+
     /* tickets */
     a.ZpEhbb.ygsxke {
-        color: #F8F8F2 !important;
-        background: #BD93F9 !important;
+        color: #f8f8f2 !important;
+        background: #bd93f9 !important;
         border: none;
     }
     .zhZ3gf {
-    /*     background: #000000; */
+        /*     background: #000000; */
     }
     .ggc73c {
-        background: #44475A !important;
-        border: 1px solid #6272A4;
+        background: #44475a !important;
+        border: 1px solid #6272a4;
         transition: background 0.3s ease;
     }
     .ggc73c:hover {
-        background: #6272A4 !important;
+        background: #6272a4 !important;
     }
     .ZFr60d.CeoRYc {
-        background: #282A36 !important;
-    ;
+        background: #282a36 !important;
     }
-    }
-    
-    @-moz-document regexp("https?://www\\.google(\\.com?)?(\\.[a-z][a-z])?/(|\\?gws_rd.*|\\?gfe_rd.*|webhp\\?.*)") {
+}
+
+@-moz-document regexp("https?://www\\.google(\\.com?)?(\\.[a-z][a-z])?/(|\\?gws_rd.*|\\?gfe_rd.*|webhp\\?.*)")
+{
     /* background */
     /* body */
     .L3eUgb {
-        background: #282A36;
+        background: #282a36;
     }
-    
+
     /* header */
     .gb_Ea {
-        background: #282A36 !important;
+        background: #282a36 !important;
     }
-    
+
     /* logo */
     /* .lnXdpd {
         display: none;
     } */
     .k1zIA.rSk4se {
-    /*     background-image: url(https://draculatheme.com/images/hero/dracula-icon.svg) !important; */
+        /*     background-image: url(https://draculatheme.com/images/hero/dracula-icon.svg) !important; */
         background-position: center center !important;
-        background-repeat: no-repeat !important;   
+        background-repeat: no-repeat !important;
         display: block;
     }
-    
-    
+
     /* footer */
     .c93Gbe {
-        background: #282A36 !important;
-    /*     border-top: 1px solid #6272A4 !important; */
+        background: #282a36 !important;
+        /*     border-top: 1px solid #6272A4 !important; */
     }
-    
+
     .uU7dJb {
-        color: #BD93F9 !important;
-        border-bottom: 1px solid #6272A4 !important;
+        color: #bd93f9 !important;
+        border-bottom: 1px solid #6272a4 !important;
     }
-    
+
     /* button under search bar */
-    .lJ9FBc input[type="submit"], .gbqfba {
-        background: #44475A !important;
+    .lJ9FBc input[type="submit"],
+    .gbqfba {
+        background: #44475a !important;
         transition: border 0.3s ease;
     }
     .lJ9FBc input[type="submit"]:hover {
-        border: 1px solid #6272A4;
+        border: 1px solid #6272a4;
     }
-    
+
     /* search box */
-    .RNNXgb, .sbibod {
-        border: 2px solid #6272A4 !important;
-        background-color: #44475A !important;
+    .RNNXgb,
+    .sbibod {
+        border: 2px solid #6272a4 !important;
+        background-color: #44475a !important;
     }
-    
+
     .QCzoEc svg {
         fill: #ffffff;
     }
-    
+
     div.aajZCb {
-        background-color: #44475A !important;
-    /*     border-right: 2px solid #6272A4 !important; */
+        background-color: #44475a !important;
+        /*     border-right: 2px solid #6272A4 !important; */
     }
-    
+
     li.sbhl {
-        background: #6272A4;
+        background: #6272a4;
     }
-    
+
     /* Google offered in: Lang */
-    #SIvCob a{
-        color: #FF79C6 !important;
+    #SIvCob a {
+        color: #ff79c6 !important;
     }
-    
+
     input.RNmpXc {
-    /*     background: #ff0000; */
+        /*     background: #ff0000; */
     }
-    }
+}
