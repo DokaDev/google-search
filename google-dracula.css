@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google-Dracula
-@version      20241124.21.51
+@version      20241125.09.28
 @namespace    https://userstyles.world/user/DokaDev
 @description  This is a theme that applies the Dracula color scheme to the Google main and search pages.
 @author       DokaDev
@@ -33,25 +33,31 @@
     }
 
     /* more button*/
-    .YmvwI {
-        color: #b0b4ca;
-        transition: color 0.3s ease;
+    /* .Ap1Qsc > a .YmvwI, .CCQQAA > a .YmvwI {
+        color: #b0b4ca !important;
+        transition: color 0.3s ease !important;
     }
-    .YmvwI:hover {
-        color: #6272a4;
+    .Ap1Qsc > a .YmvwI:hover, .CCQQAA > a .YmvwI:hover {
+        color: #6272A4 !important;
+    } */
+    .crJ18e > div > div > a > .YmvwI {
+        color: #b0b4ca !important;
+        transition: color 0.3s ease !important;
     }
+    .crJ18e > div > div > a > .YmvwI:hover {
+        color: #6272a4 !important;
+    }
+
     .Lu57id span {
         /*     color: #b0b4ca; */
         /*     transition: color 0.3s ease; */
     }
 
-    .LatpMc.d4DFfb.nPDzT.T3FoJb,
-    .K1yPdf {
-        transition: background 0.3s ease;
+    .LtmTod > div > .T3FoJb {
+        transition: background 0.3s ease !important;
     }
-    .LatpMc.d4DFfb.nPDzT.T3FoJb:hover,
-    .K1yPdf:hover {
-        background: #6272a4;
+    .LtmTod > div > .T3FoJb:hover {
+        background: #6272a4 !important;
         /*     transition: background 0.3s ease; */
     }
 
@@ -166,7 +172,6 @@
     /* .Ap1Qsc {
         background: #282A36 !important;
     } */
-
     /* div.ZDHp {
         background: #44475A !important;
     } */
@@ -187,7 +192,6 @@
     /* div.Ww4FFb.vt6azd {
         background: #44475A !important;
     } */
-
     a.ZpEhbb.BWikKb {
         background: #ff79c6;
         border: none;
@@ -207,6 +211,12 @@
     }
     .ab_button span {
         color: #f8f8f2 !important;
+    }
+    .uais2d {
+        background: #44475a !important;
+    }
+    .ZkkK1e {
+        background: #44475a !important;
     }
 
     /* fin market summary */
@@ -459,7 +469,6 @@
         color: #b0b4ca;
     }
      */
-
     /* ------------------------------------------------------- */
     /* footer */
     #fbar.f6F9Be.TrMVnc,
@@ -492,8 +501,10 @@
         
     } */
     span.mgAbYb.OSrXXb.RES9jf.IFnjPb {
-        color: #ffffff; /* 기본 글자 색 */
-        transition: color 0.5s ease; /* 색상 전환 애니메이션 */
+        color: #ffffff;
+        /* 기본 글자 색 */
+        transition: color 0.5s ease;
+        /* 색상 전환 애니메이션 */
     }
     span.mgAbYb.OSrXXb.RES9jf.IFnjPb:hover {
         color: #bd93f9;
@@ -516,7 +527,6 @@
     }
     div.aajZCb {
         /*     background-color: #44475A !important; */
-
         background-color: rgba(68, 71, 90, 0.88) !important;
         /*     border-right: 2px solid #6272A4 !important; */
     }
