@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dracula Theme for Google Search
 @namespace      github.com/dracula
-@version        2.0.1
+@version        2.1.0
 @description    Official Dracula theme for Google Search (Stylus-compatible)
 @author         Dracula
 @license        MIT
@@ -1276,5 +1276,25 @@
     .uais2d:hover {
         background: var(--dracula-selection) !important;
         border-color: var(--dracula-comment) !important;
+    }
+
+    /* ==========================================================================
+       Section: Profile Icons
+       ========================================================================== */
+
+    /* Social media profile icons (circular background)
+     * These appear in the Profiles section (Instagram, YouTube, Facebook, LinkedIn, etc.)
+     * Removing outlines and applying Dracula selection color
+     */
+    .zqrO0 .niO4u {
+        background-color: var(--dracula-selection) !important;
+        outline: none !important;
+        border: 1px solid transparent !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .zqrO0 .niO4u:hover {
+        border-color: var(--dracula-comment) !important;
+        box-shadow: 0 2px 8px rgba(189, 147, 249, 0.3) !important;
     }
 }
