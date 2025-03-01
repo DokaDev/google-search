@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dracula Theme for Google Search
 @namespace      github.com/dracula
-@version        2.0.0
+@version        2.0.1
 @description    Official Dracula theme for Google Search (Stylus-compatible)
 @author         Dracula
 @license        MIT
@@ -1182,5 +1182,99 @@
         font-weight: 600 !important;
         /*         font-size: 14px !important;
         margin-bottom: 8px !important; */
+    }
+
+    /* ==========================================================================
+       Section: Result Cards and Dividers
+       ========================================================================== */
+
+    /* Search results topic cards - shown at the top of search results
+     * These cards show related topics with images (e.g., Count Dracula, Bram Stoker's Dracula, etc.)
+     * The selector .UivI7b targets the card container
+     */
+    div.UivI7b {
+        background-color: var(--dracula-selection) !important;
+        border-radius: 8px !important;
+        border: 1px solid transparent !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    div.UivI7b:hover {
+        border-color: var(--dracula-comment) !important;
+        box-shadow: 0 4px 12px rgba(189, 147, 249, 0.3) !important;
+    }
+
+    /* Maintain original link styling within result cards */
+    div.UivI7b a,
+    div.UivI7b a:visited,
+    div.UivI7b a:hover {
+        color: var(--dracula-foreground) !important;
+        text-decoration: none !important;
+        transition: opacity 0.3s ease !important;
+    }
+
+    div.UivI7b a:hover {
+        opacity: 0.8 !important;
+    }
+
+    /* Search result card divider 
+     * The divider shown below search result cards
+     * The selector .akqY6 targets the divider element
+     */
+    div.akqY6 {
+        background-color: var(--dracula-selection) !important;
+        height: 1px !important;
+        border: none !important;
+    }
+
+    /* Menu toggle button (arrow shaped)
+     * Used to toggle additional menu options in search results
+     * The selectors .dvfTSb.OdANFd target the arrow button
+     * No hover effect applied as per requirements
+     */
+    .dvfTSb.OdANFd {
+        background-color: var(--dracula-selection) !important;
+        border-radius: 4px !important;
+        border: 1px solid transparent !important;
+    }
+
+    /* Prevent SVG icon inside the toggle button from changing color on hover
+     * This overrides the global link hover styles for this specific icon
+     */
+    .dvfTSb.OdANFd svg,
+    .dvfTSb.OdANFd svg path,
+    .dvfTSb.OdANFd svg rect,
+    .dvfTSb.OdANFd svg circle,
+    .dvfTSb.OdANFd svg polygon,
+    .dvfTSb.OdANFd svg g {
+        color: var(--dracula-foreground) !important;
+        fill: var(--dracula-foreground) !important;
+        stroke: var(--dracula-foreground) !important;
+        transition: none !important;
+    }
+
+    .dvfTSb.OdANFd:hover svg,
+    .dvfTSb.OdANFd:hover svg path,
+    .dvfTSb.OdANFd:hover svg rect,
+    .dvfTSb.OdANFd:hover svg circle,
+    .dvfTSb.OdANFd:hover svg polygon,
+    .dvfTSb.OdANFd:hover svg g {
+        color: var(--dracula-foreground) !important;
+        fill: var(--dracula-foreground) !important;
+        stroke: var(--dracula-foreground) !important;
+        opacity: 1 !important;
+    }
+
+    /* See Results About Cards */
+    .uais2d {
+        background: var(--dracula-current-line) !important;
+        border-radius: 8px !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .uais2d:hover {
+        background: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
     }
 }
