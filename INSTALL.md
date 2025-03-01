@@ -7,6 +7,7 @@
 - **Chrome/Edge/Brave**: Install Stylus from the [Chrome Web Store](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne);
 - **Firefox**: Install Stylus from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
 
-2. Visit [Google Dracula on UserStyles.world](https://userstyles.world/style/19469/google-dracula);
+<!-- 2. Visit [Google Dracula on UserStyles.world](https://userstyles.world/style/19469/google-dracula); -->
+2. Visit [Install Theme](https://raw.githubusercontent.com/dracula/google-search/main/google-search.user.css);
 3. Click the "Install" button;
 4. The theme will automatically apply to Google Search pages;
