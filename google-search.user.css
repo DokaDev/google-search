@@ -1,0 +1,1186 @@
+/* ==UserStyle==
+@name           Dracula Theme for Google Search
+@namespace      github.com/dracula
+@version        2.0.0
+@description    Official Dracula theme for Google Search (Stylus-compatible)
+@author         Dracula
+@license        MIT
+@homepageURL    https://google.com
+@updateURL      https://raw.githubusercontent.com/dracula/google-search/main/google-search.user.css
+@preprocessor   stylus
+==/UserStyle== */
+
+/* Google Main Page */
+@-moz-document regexp("https?://www\\.google(\\.com?)?(\\.[a-z][a-z])?/(|\\?gws_rd.*|\\?gfe_rd.*|webhp\\?.*)")
+{
+    /* Base styles */
+    body {
+        background-color: #282a36;
+        color: #f8f8f2;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    a.gb_W {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    /* Global transition for all interactive elements */
+    a,
+    button,
+    input,
+    .RNNXgb,
+    .XDyW0e,
+    .nDcEnd {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    /* Search box container with enhanced animations */
+    .RNNXgb {
+        background: #44475a !important;
+        border: 2px solid #6272a4 !important;
+        border-radius: 24px !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .RNNXgb:hover {
+        box-shadow: 0 4px 12px rgba(189, 147, 249, 0.4) !important;
+        border-color: #bd93f9 !important;
+    }
+
+    .RNNXgb:focus-within {
+        box-shadow: 0 6px 16px rgba(189, 147, 249, 0.5) !important;
+        border-color: #ff79c6 !important;
+    }
+
+    /* Search buttons with enhanced effects */
+    input.gNO89b,
+    input.RNmpXc {
+        background-color: #44475a !important;
+        color: #f8f8f2 !important;
+        border: 1px solid #6272a4 !important;
+        border-radius: 4px !important;
+        margin: 11px 4px !important;
+        padding: 0 16px !important;
+        height: 36px !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    input.gNO89b:hover,
+    input.RNmpXc:hover {
+        background-color: #6272a4 !important;
+        border-color: #bd93f9 !important;
+        box-shadow: 0 4px 12px rgba(189, 147, 249, 0.3) !important;
+    }
+
+    input.gNO89b:active,
+    input.RNmpXc:active {
+        transform: translateY(1px) !important;
+    }
+
+    /* Voice and Lens search icons with rotate effect */
+    .XDyW0e,
+    .nDcEnd {
+        color: #bd93f9 !important;
+        transform: rotate(0deg) scale(1) !important;
+    }
+
+    .XDyW0e:hover,
+    .nDcEnd:hover {
+        color: #ff79c6 !important;
+        transform: rotate(5deg) scale(1.1) !important;
+    }
+
+    /* Google logo with smooth color transition */
+    img.lnXdpd {
+        position: relative !important;
+        filter: drop-shadow(0 0 6px rgba(189, 147, 249, 0.5)) brightness(0)
+            invert(1) !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+    img.lnXdpd:hover {
+        filter: drop-shadow(0 0 12px rgba(255, 121, 198, 0.8)) brightness(0)
+            invert(0.95) !important;
+    }
+
+    /* Animated background for logo */
+    .k1zIA {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .k1zIA:before {
+        content: "" !important;
+        position: absolute !important;
+        top: -10px !important;
+        left: -10px !important;
+        right: -10px !important;
+        bottom: -10px !important;
+        background: linear-gradient(
+            45deg,
+            rgba(189, 147, 249, 0.1),
+            rgba(255, 121, 198, 0.1),
+            rgba(139, 233, 253, 0.1)
+        ) !important;
+        background-size: 400% 400% !important;
+        animation: gradient 3s ease infinite !important;
+        border-radius: 50% !important;
+        z-index: -1 !important;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50% !important;
+        }
+        50% {
+            background-position: 100% 50% !important;
+        }
+        100% {
+            background-position: 0% 50% !important;
+        }
+    }
+
+    /* Remove old styles */
+    .logo,
+    .lnXdpd::after {
+        display: none !important;
+    }
+
+    /* Links with underline animation */
+    a {
+        color: #8be9fd !important;
+        text-decoration: none !important;
+        background: linear-gradient(
+            to right,
+            #ff79c6 50%,
+            transparent 50%
+        ) !important;
+        background-size: 200% 1px !important;
+        background-position: 100% 100% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    a:hover {
+        color: #ff79c6 !important;
+        background-position: 0% 100% !important;
+    }
+
+    /* Navigation links fade effect */
+    div[class*="gb_"] a,
+    div[class*="c93Gbe"] a {
+        opacity: 0.8 !important;
+    }
+
+    div[class*="gb_"] a:hover,
+    div[class*="c93Gbe"] a:hover {
+        opacity: 1 !important;
+    }
+
+    /* Top navigation bar */
+    div[class*="gb_"] {
+        background-color: #282a36 !important;
+    }
+
+    /* Bottom navigation bar */
+    div[class*="c93Gbe"] {
+        background-color: #282a36 !important;
+    }
+
+    /* Make sure all navigation links are visible */
+    div[class*="gb_"] a,
+    div[class*="c93Gbe"] a {
+        color: #6272a4 !important;
+    }
+
+    div[class*="gb_"] a:hover,
+    div[class*="c93Gbe"] a:hover {
+        color: #8be9fd !important;
+    }
+
+    /* Search input */
+    input.gLFyf {
+        background: transparent !important;
+        color: #f8f8f2 !important;
+        border: none !important;
+    }
+
+    /* Header */
+    .header {
+        background-color: #282a36 !important;
+    }
+
+    .header a {
+        color: #f8f8f2 !important;
+    }
+
+    .header a:hover {
+        color: #ff79c6 !important;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #282a36 !important;
+        border-top: 1px solid #44475a !important;
+    }
+
+    .footer a {
+        color: #6272a4 !important;
+    }
+
+    .footer a:hover {
+        color: #8be9fd !important;
+    }
+
+    /* Icons */
+    .icon {
+        color: #bd93f9 !important;
+    }
+
+    .icon:hover {
+        color: #ff79c6 !important;
+    }
+
+    /* Search suggestions dropdown */
+    .suggestions-dropdown {
+        background-color: #44475a !important;
+        border: 1px solid #6272a4 !important;
+        color: #f8f8f2 !important;
+    }
+
+    .suggestion-item:hover {
+        background-color: #6272a4 !important;
+    }
+
+    /* Voice search button */
+    .voice-search {
+        background-color: #44475a !important;
+        color: #ff79c6 !important;
+    }
+
+    /* Image search button */
+    .image-search {
+        background-color: #44475a !important;
+        color: #8be9fd !important;
+    }
+
+    /* Selection color */
+    ::selection {
+        background-color: #44475a !important;
+        color: #f8f8f2 !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #282a36;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #44475a;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6272a4;
+    }
+
+    /* Dark mode specific overrides */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #282a36 !important;
+        }
+
+        input[type="text"] {
+            background-color: #44475a !important;
+        }
+    }
+
+    /* Profile modal */
+    /*     .aRDKUe .Lvwayc {
+        background: #282a36 !important;
+        box-shadow: 0 2px 10px rgba(40, 42, 54, 0.8) !important;
+    } */
+}
+
+/* Google Search Page */
+@-moz-document regexp("https?:\\/\\/www\\.google(\\.[a-z]{2,3}){1,2}\\/search\\?.*") {
+    /* ==========================================================================
+       Base styles and CSS Variables
+       ========================================================================== */
+
+    :root {
+        /* Dracula Color Palette */
+        --dracula-background: #282a36;
+        --dracula-current-line: #44475a;
+        --dracula-selection: #44475a;
+        --dracula-foreground: #f8f8f2;
+        --dracula-comment: #6272a4;
+        --dracula-cyan: #8be9fd;
+        --dracula-green: #50fa7b;
+        --dracula-orange: #ffb86c;
+        --dracula-pink: #ff79c6;
+        --dracula-purple: #bd93f9;
+        --dracula-red: #ff5555;
+        --dracula-yellow: #f1fa8c;
+
+        /* Custom Theme Variables */
+        --background-secondary: #21222c;
+        --text-muted: #999999;
+        --shadow-color: rgba(0, 0, 0, 0.2);
+        --overlay-color: rgba(40, 42, 54, 0.8);
+        --link-color: #9ccfd8;
+    }
+
+    /* ==========================================================================
+       Global Styles
+       ========================================================================== */
+
+    /* Background Color Overrides */
+    body,
+    #cnt,
+    .sfbg,
+    .minidiv .sfbg,
+    #searchform.minidiv,
+    .srp,
+    .gsc-control-cse,
+    .gsc-control-wrapper-cse,
+    .e9EfHf,
+    #appbar,
+    .dodTBe {
+        background: var(--dracula-background) !important;
+    }
+
+    /* Top Navigation Bar */
+    .aajZCb {
+        background: var(--dracula-current-line) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Search Options Bar */
+    .T47uwc {
+        background: var(--background-secondary) !important;
+    }
+
+    .MUFPAc {
+        background: transparent !important;
+    }
+
+    /* Remove white backgrounds from various containers */
+    .g,
+    .bkWMgd,
+    .bkWMgd > div,
+    .jtfYYd,
+    .y8Jpof {
+        background: transparent !important;
+    }
+
+    body {
+        color: var(--dracula-foreground);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    /* Links - Global */
+    a,
+    .LC20lb,
+    .iUh30,
+    .VwiC3b a,
+    .st a,
+    .fl,
+    .BUybKb,
+    .Fx4vi {
+        transition: all 0.3s ease !important;
+    }
+
+    /* Links */
+    a,
+    .LC20lb {
+        color: var(--link-color) !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+    a:visited,
+    a:visited .LC20lb {
+        color: var(--dracula-purple) !important;
+    }
+
+    a:hover,
+    a:visited:hover,
+    .LC20lb:hover,
+    a:visited .LC20lb:hover {
+        color: var(--dracula-pink) !important;
+        text-decoration: none !important;
+    }
+
+    /* ==========================================================================
+       Search Header
+       ========================================================================== */
+
+    /* Search Box Container */
+    .RNNXgb {
+        background: var(--dracula-current-line) !important;
+        border: 2px solid var(--dracula-comment) !important;
+        border-radius: 24px !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .RNNXgb:hover {
+        box-shadow: 0 4px 12px rgba(189, 147, 249, 0.4) !important;
+        border-color: var(--dracula-purple) !important;
+    }
+
+    .RNNXgb:focus-within {
+        box-shadow: 0 6px 16px rgba(189, 147, 249, 0.5) !important;
+        border-color: var(--dracula-pink) !important;
+    }
+
+    /* Search Input */
+    .gLFyf {
+        color: var(--dracula-foreground) !important;
+        background: transparent !important;
+        outline: none !important;
+    }
+
+    /* Search Button and Icons */
+    .Tg7LZd,
+    .z1asCe {
+        color: var(--dracula-purple) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .Tg7LZd:hover,
+    .z1asCe:hover {
+        color: var(--dracula-pink) !important;
+    }
+
+    /* ==========================================================================
+       Search Results
+       ========================================================================== */
+
+    /* Result Title */
+    .LC20lb {
+        color: var(--link-color) !important;
+        font-weight: 600;
+    }
+
+    .LC20lb:visited {
+        color: var(--dracula-purple) !important;
+    }
+
+    .LC20lb:hover {
+        color: var(--dracula-pink) !important;
+        text-decoration: none !important;
+    }
+
+    /* URL Display */
+    .iUh30 {
+        color: var(--dracula-green) !important;
+    }
+
+    .iUh30:hover {
+        color: var(--dracula-pink) !important;
+    }
+
+    /* Result Description */
+    .VwiC3b {
+        color: var(--dracula-foreground) !important;
+    }
+
+    /* Result Metadata */
+    .aCOpRe {
+        color: var(--text-muted) !important;
+    }
+
+    /* ==========================================================================
+       Navigation and Tools
+       ========================================================================== */
+
+    /* Search Tools */
+    .t2vtad {
+        border-color: var(--dracula-current-line) !important;
+        background: var(--background-secondary) !important;
+    }
+
+    /* Pagination */
+    .YyVfkd {
+        color: var(--dracula-purple) !important;
+    }
+
+    /* ==========================================================================
+       Special Results
+       ========================================================================== */
+
+    /* Featured Snippet */
+    .c2xzTb {
+        background: var(--dracula-current-line) !important;
+        border: 1px solid var(--dracula-comment) !important;
+        border-radius: 8px;
+    }
+
+    /* Knowledge Panel */
+    .kp-wholepage {
+        border-radius: 8px;
+        margin: 0 16px 16px 0 !important;
+        padding: 0 16px 16px 0 !important;
+    }
+
+    /* Knowledge Panel Container */
+    #rhs {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Knowledge Panel Header */
+    .kno-ecr-pt {
+        color: var(--dracula-purple) !important;
+        font-weight: 600;
+        margin-top: 8px !important;
+    }
+
+    /* Knowledge Panel Links */
+    .kno-fv {
+        color: var(--dracula-cyan) !important;
+    }
+
+    /* Knowledge Panel Sections */
+    .wwUB2c {
+        border-color: var(--dracula-current-line) !important;
+        padding: 12px 0 !important;
+    }
+
+    /* Knowledge Panel Images */
+    .kno-mrg {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    /* Knowledge Panel Buttons */
+    .kno-fb-ctx {
+        background: var(--dracula-current-line) !important;
+        border-color: var(--dracula-comment) !important;
+        border-radius: 4px;
+    }
+
+    /* Image Results */
+    .isv-r {
+        background: var(--dracula-current-line) !important;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+    }
+
+    .isv-r:hover {
+        transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       Utility Classes
+       ========================================================================== */
+
+    /* Loading States */
+    .loading {
+        background: var(--dracula-current-line) !important;
+    }
+
+    /* Highlights */
+    .hNKfZe {
+        color: var(--dracula-orange) !important;
+    }
+
+    /* ==========================================================================
+       Responsive Design
+       ========================================================================== */
+
+    @media (max-width: 768px) {
+        .RNNXgb {
+            border-radius: 16px;
+        }
+
+        .kp-wholepage {
+            border-radius: 0;
+        }
+    }
+
+    /* ==========================================================================
+       Accessibility
+       ========================================================================== */
+
+    /* Focus States */
+    *:focus {
+        outline: none !important;
+    }
+
+    /* Custom focus styles for interactive elements */
+    a:focus,
+    button:focus,
+    input:not(.gLFyf):focus,
+    [role="button"]:focus {
+        box-shadow: 0 0 0 2px var(--dracula-background),
+            0 0 0 4px var(--dracula-comment) !important;
+        border-radius: 4px;
+    }
+
+    /* Keep outline for keyboard navigation only */
+    :focus:not(:focus-visible) {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    /* High Contrast Mode */
+    @media (forced-colors: active) {
+        .LC20lb {
+            color: LinkText !important;
+        }
+
+        .iUh30 {
+            color: GrayText !important;
+        }
+    }
+
+    /* See Results About Cards */
+    .uais2d {
+        background: var(--dracula-current-line) !important;
+        border-radius: 8px !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .uais2d:hover {
+        background: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Show More Images Button */
+    .ZFiwCf {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .ZFiwCf:hover {
+        background-color: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Horizontal Rule */
+    .Bi9oQd {
+        background-color: var(--dracula-current-line) !important;
+        border: none !important;
+    }
+
+    /* Remove previous incorrect selector */
+    .ZZWlwf {
+        display: none; /* This line is just to help find and remove this block */
+    }
+
+    /* ==========================================================================
+       Section: Image Results
+       ========================================================================== */
+
+    /* "Show more images" expand button - appears at the bottom of image results section */
+    .ZFiwCf {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .ZFiwCf:hover {
+        background-color: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Horizontal divider for image section */
+    .Bi9oQd {
+        background-color: var(--dracula-current-line) !important;
+        border: none !important;
+    }
+
+    /* ==========================================================================
+       Section: Video Results
+       ========================================================================== */
+
+    /* "View all" button - appears at the bottom of video results section */
+    .S8ee5 {
+        background: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .S8ee5:hover {
+        background: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Horizontal divider for video section */
+    .rhHIGd {
+        background-color: var(--dracula-current-line) !important;
+        border: none !important;
+    }
+
+    /* Google Logo and Pagination Styles */
+    .logo {
+        filter: brightness(0) invert(1) !important;
+    }
+
+    /* Fix for repeated 'o' letters in Google logo */
+    .goooooooooogle {
+        color: var(--dracula-foreground) !important;
+        font-family: arial, sans-serif !important;
+    }
+
+    /* Pagination container */
+    #foot {
+        background: transparent !important;
+    }
+
+    /* Pagination numbers */
+    #xjs a,
+    #xjs span {
+        color: var(--dracula-foreground) !important;
+        background: transparent !important;
+    }
+
+    #xjs a:hover {
+        color: var(--dracula-pink) !important;
+        text-decoration: none !important;
+    }
+
+    /* Current page number */
+    .YyVfkd {
+        color: var(--dracula-purple) !important;
+    }
+
+    /* Next button */
+    #pnnext {
+        color: var(--dracula-cyan) !important;
+    }
+
+    #pnnext:hover {
+        color: var(--dracula-pink) !important;
+    }
+
+    /* Previous button */
+    #pnprev {
+        color: var(--dracula-cyan) !important;
+    }
+
+    #pnprev:hover {
+        color: var(--dracula-pink) !important;
+    }
+
+    /* ==========================================================================
+       Section: People also search for
+       ========================================================================== */
+
+    /* People also search for cards */
+    .vIifob {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .vIifob:hover {
+        background-color: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* People also search for - Image cards */
+    .IPpbe {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* ==========================================================================
+       Section: Footer
+       ========================================================================== */
+
+    /* Footer background */
+    #footcnt,
+    #fbar,
+    .GNueGc,
+    .TuS8Ad {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Footer border and container */
+    .f6F9Be {
+        background: var(--dracula-background) !important;
+        border-top: 1px solid var(--dracula-current-line) !important;
+    }
+
+    /* Location info */
+    .ELcVZ {
+        color: var(--dracula-comment) !important;
+    }
+
+    /* Location text and links */
+    .ELcVZ,
+    .Q8LRLc,
+    .gMZyfc,
+    .uEec3 {
+        color: var(--dracula-comment) !important;
+    }
+
+    /* Location update link */
+    .BUybKb {
+        color: var(--dracula-cyan) !important;
+    }
+
+    .BUybKb:hover {
+        color: var(--dracula-pink) !important;
+        text-decoration: none !important;
+    }
+
+    /* Footer links */
+    .Fx4vi {
+        color: var(--dracula-comment) !important;
+        transition: color 0.2s ease !important;
+    }
+
+    .Fx4vi:hover {
+        color: var(--dracula-cyan) !important;
+        text-decoration: none !important;
+    }
+
+    /* Footer dividers */
+    .b2hzT {
+        border-color: var(--dracula-current-line) !important;
+    }
+
+    /* Not personalized text */
+    .g3B0Ff {
+        color: var(--dracula-comment) !important;
+    }
+
+    /* Knowledge Panel - People also search for section */
+    .KcXNxb {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Not personalized text */
+    .g3B0Ff {
+        color: var(--dracula-comment) !important;
+    }
+
+    /* ==========================================================================
+       Section: People also ask
+       ========================================================================== */
+
+    /* Expand/Collapse buttons */
+    .fxvkXe,
+    .p8Jhnd {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .fxvkXe:hover,
+    .p8Jhnd:hover {
+        background-color: var(--dracula-selection) !important;
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* Question text */
+    .related-question-pair {
+        color: var(--dracula-foreground) !important;
+    }
+
+    /* ==========================================================================
+       Section: Knowledge Panel Buttons
+       ========================================================================== */
+
+    /* Top-right circular button */
+    .rXoM2c .niO4u {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: border-color 0.2s ease !important;
+    }
+
+    .rXoM2c .niO4u:hover,
+    .rXoM2c .niO4u:hover::before {
+        /* background-color: var(--dracula-current-line) !important; */
+        border-color: var(--dracula-comment) !important;
+    }
+
+    /* More button in top menu (including News tab) */
+    .Lu57id,
+    .fKmH1e {
+        background-color: var(--dracula-background) !important;
+        color: var(--dracula-comment) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .Lu57id:hover,
+    .fKmH1e:hover {
+        background-color: var(--dracula-selection) !important;
+        color: var(--dracula-foreground) !important;
+    }
+
+    /* Top navigation menu items */
+    .YmvwI {
+        color: var(--dracula-comment) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .YmvwI:hover {
+        color: var(--dracula-foreground) !important;
+    }
+
+    /* Selected menu item */
+    [selected].YmvwI {
+        color: var(--dracula-purple) !important;
+        border-bottom: 3px solid var(--dracula-purple) !important;
+    }
+
+    /* ==========================================================================
+       Section: News Page Links
+       ========================================================================== */
+
+    /* News article links
+     * .ynAwRc - Base class for news article links
+     * Preserving original styles while adding Dracula theme colors
+     */
+    .ynAwRc {
+        color: var(--link-color) !important;
+        transition: all 0.3s ease !important;
+        -webkit-line-clamp: 3;
+    }
+
+    /* News link hover state */
+    .ynAwRc:hover {
+        color: var(--dracula-pink) !important;
+        text-decoration: none !important;
+    }
+
+    /* Visited news links - using purple for visited state
+     * while preserving the multi-line ellipsis behavior
+     */
+    a:visited .ynAwRc {
+        color: var(--dracula-purple) !important;
+    }
+
+    a:visited .ynAwRc:hover {
+        color: var(--dracula-pink) !important;
+    }
+
+    /* Knowledge Panel image container background
+     * Fills the empty space when image ratio doesn't match container
+     */
+    .b4cr6b {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* Knowledge Panel bottom button */
+    a.WpKAof {
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+    a.WpKAof:hover {
+        text-decoration: none !important;
+        color: var(--dracula-pink) !important;
+    }
+
+    /* Knowledge Panel bottom text */
+    .Z4Cazf {
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+    a .Z4Cazf:hover {
+        text-decoration: none !important;
+    }
+
+    /* Knowledge Panel - Review Section */
+    .uVGhGc {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    .l2gNXd {
+        background-color: var(--dracula-purple) !important;
+    }
+
+    /* ==========================================================================
+       Section: Things to do
+       ========================================================================== */
+
+    /* Container background */
+    .ZVHLgc {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Card background */
+    .YXe3R {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* ==========================================================================
+       Section: Places to visit
+       ========================================================================== */
+
+    /* Container background */
+    .LJQfbb {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Card background */
+    .YXe3R {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* Knowledge Panel - Review Section */
+    .uVGhGc {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    .l2gNXd {
+        background-color: var(--dracula-purple) !important;
+    }
+
+    /* ==========================================================================
+       Section: Things to do Search Results
+       ========================================================================== */
+
+    /* Top sights section (appears when searching for "Things to do in [location]")
+     * This section shows attraction cards with ratings, descriptions, and prices
+     */
+    .IiOSLb .rsGxI.Ww4FFb,
+    .Ww4FFb {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Card background - reusing the same style for consistency */
+    .YXe3R {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* ==========================================================================
+       Section: Market Summary
+       ========================================================================== */
+
+    /* Chart hover tooltip card
+     * Shows price and time information when hovering over the chart
+     */
+    .knowledge-finance-wholepage-chart__hover-card {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* Text background fixes */
+    .yvg0ob span,
+    .uch-xa-tl {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Overview/Compare buttons */
+    .REySof {
+        background-color: var(--dracula-current-line) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .REySof:hover {
+        background-color: var(--dracula-selection) !important;
+    }
+
+    /* Compare search box */
+    .EEmK6c {
+        background-color: var(--dracula-current-line) !important;
+        border-radius: 8px !important;
+        border: 1px solid transparent !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .EEmK6c:hover {
+        border-color: var(--dracula-comment) !important;
+    }
+
+    .KIdUu {
+        background: transparent !important;
+    }
+
+    /* ==========================================================================
+       Section: Search Suggestions Dropdown
+       ========================================================================== */
+
+    /* Suggestions dropdown background */
+    .YYF5qc div.sbdd_b,
+    .YYF5qc div.sbsb_a,
+    .gstl_50 .sbdd_b {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        border-radius: 0 0 8px 8px !important;
+    }
+
+    /* Individual suggestion items */
+    .sbai,
+    .sbpqs_a,
+    .sbse {
+        transition: all 0.2s ease !important;
+    }
+
+    /* Suggestion item hover state */
+    .sbsb_d, /* Selected item */
+    .sbsb_a div:hover,
+    .YYF5qc div:hover {
+        background-color: var(--dracula-selection) !important;
+    }
+
+    /* ==========================================================================
+       Section: Image Search Results
+       ========================================================================== */
+
+    /* Image grid container background */
+    .u32vCb .wIjY0d {
+        background-color: var(--dracula-background) !important;
+    }
+
+    /* Image card background */
+    .H8Rx8c {
+        background-color: var(--dracula-current-line) !important;
+    }
+
+    /* ==========================================================================
+       Section: Related Search Cards
+       ========================================================================== */
+
+    /* Related search card background */
+    .GKS7s {
+        background-color: var(--dracula-current-line) !important;
+        border: 1px solid transparent !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .GKS7s:hover {
+        box-shadow: 0 4px 12px rgba(189, 147, 249, 0.4) !important;
+        border-color: var(--dracula-purple) !important;
+        transform: translateY(-2px) !important;
+    }
+
+    /* ==========================================================================
+       Section: Shopping Results
+       ========================================================================== */
+
+    /* Product card background */
+    .i0X6df {
+        background-color: var(--dracula-current-line) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    /* Shopping filter box background */
+    .ECBYL .sh-dr__g {
+        /*         background-color: var(--dracula-current-line) !important; */
+    }
+
+    /* Shopping filter box title text */
+    div.lg3aE {
+        color: var(--dracula-purple) !important;
+        font-weight: 600 !important;
+        /*         font-size: 14px !important;
+        margin-bottom: 8px !important; */
+    }
+}
