@@ -10,7 +10,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/google](https://draculatheme.com/google-search).
+All instructions can be found at [draculatheme.com/google-search](https://draculatheme.com/google-search).
 
 enjoy! 😆
 
