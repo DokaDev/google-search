@@ -11,9 +11,15 @@
 ==/UserStyle== */
 
 /* Google Main Page */
-@-moz-document regexp("https?://www\\.google(\\.com?)?(\\.[a-z][a-z])?/(|\\?gws_rd.*|\\?gfe_rd.*|webhp\\?.*)")
-{
-    /* Base styles */
+@-moz-document regexp("https?://www\\.google(\\.com?)?(\\.[a-z][a-z])?/(|\\?gws_rd.*|\\?gfe_rd.*|webhp\\?.*)") {
+    /* Base styles and variables */
+    :root {
+        /* Custom Link Colors */
+        --dracula-link: #8da8fb;
+        --dracula-link-visited: #697ec0;
+        --dracula-link-hover: #ff79c6; /* Using existing pink for hover */
+    }
+    
     body {
         background-color: #282a36;
         color: #f8f8f2;
@@ -150,11 +156,11 @@
 
     /* Links with underline animation */
     a {
-        color: #8be9fd !important;
+        color: var(--dracula-link) !important;
         text-decoration: none !important;
         background: linear-gradient(
             to right,
-            #ff79c6 50%,
+            var(--dracula-link-hover) 50%,
             transparent 50%
         ) !important;
         background-size: 200% 1px !important;
@@ -163,8 +169,16 @@
     }
 
     a:hover {
-        color: #ff79c6 !important;
+        color: var(--dracula-link-hover) !important;
         background-position: 0% 100% !important;
+    }
+
+    a:visited {
+        color: var(--dracula-link-visited) !important;
+    }
+
+    a:visited:hover {
+        color: var(--dracula-link-hover) !important;
     }
 
     /* Navigation links fade effect */
@@ -333,7 +347,9 @@
         --text-muted: #999999;
         --shadow-color: rgba(0, 0, 0, 0.2);
         --overlay-color: rgba(40, 42, 54, 0.8);
-        --link-color: #9ccfd8;
+        --link-color: var(--dracula-link, #8da8fb);
+        --link-visited: var(--dracula-link-visited, #697ec0);
+        --link-hover: var(--dracula-link-hover, #ff79c6);
     }
 
     /* ==========================================================================
@@ -407,14 +423,14 @@
 
     a:visited,
     a:visited .LC20lb {
-        color: var(--dracula-purple) !important;
+        color: var(--link-visited) !important;
     }
 
     a:hover,
     a:visited:hover,
     .LC20lb:hover,
     a:visited .LC20lb:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
         text-decoration: none !important;
     }
 
@@ -471,11 +487,11 @@
     }
 
     .LC20lb:visited {
-        color: var(--dracula-purple) !important;
+        color: var(--link-visited) !important;
     }
 
     .LC20lb:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
         text-decoration: none !important;
     }
 
@@ -546,7 +562,7 @@
 
     /* Knowledge Panel Links */
     .kno-fv {
-        color: var(--dracula-cyan) !important;
+        color: var(--link-color) !important;
     }
 
     /* Knowledge Panel Sections */
@@ -758,20 +774,20 @@
 
     /* Next button */
     #pnnext {
-        color: var(--dracula-cyan) !important;
+        color: var(--link-color) !important;
     }
 
     #pnnext:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
     }
 
     /* Previous button */
     #pnprev {
-        color: var(--dracula-cyan) !important;
+        color: var(--link-color) !important;
     }
 
     #pnprev:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
     }
 
     /* ==========================================================================
@@ -828,11 +844,11 @@
 
     /* Location update link */
     .BUybKb {
-        color: var(--dracula-cyan) !important;
+        color: var(--link-color) !important;
     }
 
     .BUybKb:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
         text-decoration: none !important;
     }
 
@@ -843,7 +859,7 @@
     }
 
     .Fx4vi:hover {
-        color: var(--dracula-cyan) !important;
+        color: var(--link-color) !important;
         text-decoration: none !important;
     }
 
@@ -953,7 +969,7 @@
 
     /* News link hover state */
     .ynAwRc:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
         text-decoration: none !important;
     }
 
@@ -961,11 +977,11 @@
      * while preserving the multi-line ellipsis behavior
      */
     a:visited .ynAwRc {
-        color: var(--dracula-purple) !important;
+        color: var(--link-visited) !important;
     }
 
     a:visited .ynAwRc:hover {
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
     }
 
     /* Knowledge Panel image container background
@@ -983,7 +999,7 @@
 
     a.WpKAof:hover {
         text-decoration: none !important;
-        color: var(--dracula-pink) !important;
+        color: var(--link-hover) !important;
     }
 
     /* Knowledge Panel bottom text */
